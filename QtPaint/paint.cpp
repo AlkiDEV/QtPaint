@@ -74,16 +74,16 @@ void Paint::createActions(){
     connect(exitAct, SIGNAL(triggered()), this, SLOT(close()));
 
     penColorAct = new QAction(tr("&Pen Color..."), this);
-    connect(penColorAct, SIGNAL(triggered()), scribbleArea, SLOT(penColor()));
+    connect(penColorAct, SIGNAL(triggered()), this, SLOT(penColor()));
     penWidthAct = new QAction(tr("&Pen Width..."), this);
-    connect(penWidthAct, SIGNAL(triggered()), scribbleArea, SLOT(penWidth()));
+    connect(penWidthAct, SIGNAL(triggered()), this, SLOT(penWidth()));
 
     clearScreenAct = new QAction(tr("&Clear Screen..."), this);
     clearScreenAct->setShortcut(tr("Ctrl+L"));
     connect(clearScreenAct, SIGNAL(triggered()), scribbleArea, SLOT(clearImage()));
 
     aboutAct = new QAction(tr("&About..."), this);
-    connect(aboutAct, SIGNAL(triggered()), scribbleArea, SLOT(about()));
+    connect(aboutAct, SIGNAL(triggered()), this, SLOT(about()));
 
     aboutQtAct = new QAction(tr("&About Qt..."), this);
     connect(aboutQtAct, SIGNAL(triggered()), qApp, SLOT(aboutQt()));

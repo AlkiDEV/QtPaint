@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DQT_QML_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -Wextra -fPIC -D_REENTRANT $(DEFINES)
 CXXFLAGS      = -pipe -g -std=gnu++1z -Wall -Wextra -fPIC -D_REENTRANT $(DEFINES)
-INCPATH       = -I../QtPaint -I. -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore -I. -I. -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++
+INCPATH       = -I../QtPaint -I. -I../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include -I../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport -I../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets -I../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui -I../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore -I. -I. -I../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++
 QMAKE         = /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = QtPaint1.0.0
-DISTDIR = /media/alki/USB\ DISK/RutekPoligon/Aplikacje\ Desktopowe\ (Pracownia)/Qt/Projekt6/build-QtPaint-Desktop_Qt_6_4_1_GCC_64bit-Debug/.tmp/QtPaint1.0.0
+DISTDIR = /media/alki/8034FC2234FC1CBA/Qt/QtPaint/build-QtPaint-Desktop_Qt_6_4_1_GCC_64bit-Debug/.tmp/QtPaint1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib -Wl,-rpath-link,/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib
 LIBS          = $(SUBLIBS) /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6PrintSupport.so /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Widgets.so /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Gui.so /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Core.so -lpthread -lGL   
@@ -61,157 +61,158 @@ OBJECTS       = main.o \
 		scribblearea.o \
 		moc_paint.o \
 		moc_scribblearea.o
-DIST          = /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_pre.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/unix.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/linux.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/sanitize.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base-unix.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-base.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-unix.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/qconfig.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libpng.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_png_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_tools_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_functions.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_config.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++/qmake.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_post.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exclusive_builds.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/toolchain.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_pre.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resolve_config.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_post.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qml_debug.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/warn_on.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources_functions.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/moc.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/opengl.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/uic.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/thread.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qmake_use.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/file_copies.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/testcase_targets.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exceptions.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/yacc.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/lex.prf \
+DIST          = ../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_pre.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/unix.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/linux.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/sanitize.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base-unix.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-base.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-unix.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/qconfig.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libpng.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_png_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_tools_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_functions.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_config.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++/qmake.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_post.prf \
+		../QtPaint/.qmake.stash \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exclusive_builds.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/toolchain.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_pre.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resolve_config.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_post.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qml_debug.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/warn_on.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources_functions.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/moc.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/opengl.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/uic.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/thread.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qmake_use.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/file_copies.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/testcase_targets.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exceptions.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/yacc.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/lex.prf \
 		../QtPaint/QtPaint.pro ../QtPaint/paint.h \
 		../QtPaint/scribblearea.h ../QtPaint/main.cpp \
 		../QtPaint/paint.cpp \
@@ -227,319 +228,321 @@ first: all
 QtPaint: ui_paint.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET)  $(OBJECTS) $(OBJCOMP) $(LIBS)
 
-Makefile: ../QtPaint/QtPaint.pro /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++/qmake.conf /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_pre.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/unix.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/linux.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/sanitize.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base-unix.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-base.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-unix.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/qconfig.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libpng.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_png_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_tools_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_functions.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_config.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++/qmake.conf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_post.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exclusive_builds.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/toolchain.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_pre.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resolve_config.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_post.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qml_debug.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/warn_on.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources_functions.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/moc.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/opengl.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/uic.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/thread.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qmake_use.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/file_copies.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/testcase_targets.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exceptions.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/yacc.prf \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/lex.prf \
+Makefile: ../QtPaint/QtPaint.pro ../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++/qmake.conf ../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_pre.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/unix.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/linux.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/sanitize.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base-unix.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-base.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-unix.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/qconfig.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libpng.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_png_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_tools_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_functions.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_config.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++/qmake.conf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exclusive_builds.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/toolchain.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_pre.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resolve_config.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_post.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qml_debug.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/warn_on.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources_functions.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/moc.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/opengl.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/uic.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/thread.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qmake_use.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/file_copies.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/testcase_targets.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exceptions.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/yacc.prf \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/lex.prf \
 		../QtPaint/QtPaint.pro \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6PrintSupport.prl \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Widgets.prl \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Gui.prl \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Core.prl
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6PrintSupport.prl \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Widgets.prl \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Gui.prl \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Core.prl
 	$(QMAKE) -o Makefile ../QtPaint/QtPaint.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_pre.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/unix.conf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/linux.conf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/sanitize.conf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base.conf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base-unix.conf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-base.conf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-unix.conf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/qconfig.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libpng.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_png_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_tools_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml_private.pri:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_functions.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_config.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++/qmake.conf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_post.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exclusive_builds.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/toolchain.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_pre.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resolve_config.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_post.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qml_debug.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/warn_on.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources_functions.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/moc.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/opengl.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/uic.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/thread.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qmake_use.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/file_copies.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/testcase_targets.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exceptions.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/yacc.prf:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/lex.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_pre.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/unix.conf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/linux.conf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/sanitize.conf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base.conf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/gcc-base-unix.conf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-base.conf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/common/g++-unix.conf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/qconfig.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libjpeg.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_ext_libpng.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_core_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designer_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_gui_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_harfbuzz_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_help_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_jpeg_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsanimation_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssettings_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labssharedimage_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_linguist_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_network_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_openglwidgets_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_png_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qml_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlcore_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmldom_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlintegration_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quick_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicklayouts_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quicktimeline_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_sql_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svg_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_svgwidgets_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_tools_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_waylandglobal_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_wl_shell_integration_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/modules/qt_lib_xml_private.pri:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_functions.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt_config.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++/qmake.conf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exclusive_builds.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/toolchain.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_pre.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resolve_config.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/default_post.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qml_debug.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/warn_on.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qt.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources_functions.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/resources.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/moc.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/opengl.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/uic.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/unix/thread.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/qmake_use.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/file_copies.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/testcase_targets.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/exceptions.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/yacc.prf:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/lex.prf:
 ../QtPaint/QtPaint.pro:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6PrintSupport.prl:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Widgets.prl:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Gui.prl:
-/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Core.prl:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6PrintSupport.prl:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Widgets.prl:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Gui.prl:
+../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/lib/libQt6Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../QtPaint/QtPaint.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 
@@ -554,7 +557,7 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../QtPaint/paint.h ../QtPaint/scribblearea.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../QtPaint/main.cpp ../QtPaint/paint.cpp ../QtPaint/scribblearea.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../QtPaint/paint.ui $(DISTDIR)/
@@ -586,296 +589,296 @@ compiler_rcc_clean:
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
-moc_predefs.h: /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/data/dummy.cpp
-	g++ -pipe -g -std=gnu++1z -Wall -Wextra -fPIC -dM -E -o moc_predefs.h /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/data/dummy.cpp
+moc_predefs.h: ../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/data/dummy.cpp
+	g++ -pipe -g -std=gnu++1z -Wall -Wextra -fPIC -dM -E -o moc_predefs.h ../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all: moc_paint.cpp moc_scribblearea.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_paint.cpp moc_scribblearea.cpp
 moc_paint.cpp: ../QtPaint/paint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QMainWindow \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmainwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QMainWindow \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmainwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		moc_predefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/moc
-	/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/moc $(DEFINES) --include '/media/alki/USB DISK/RutekPoligon/Aplikacje Desktopowe (Pracownia)/Qt/Projekt6/build-QtPaint-Desktop_Qt_6_4_1_GCC_64bit-Debug/moc_predefs.h' -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++ -I'/media/alki/USB DISK/RutekPoligon/Aplikacje Desktopowe (Pracownia)/Qt/Projekt6/QtPaint' -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../QtPaint/paint.h -o moc_paint.cpp
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/moc
+	/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/moc $(DEFINES) --include /media/alki/8034FC2234FC1CBA/Qt/QtPaint/build-QtPaint-Desktop_Qt_6_4_1_GCC_64bit-Debug/moc_predefs.h -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++ -I/media/alki/8034FC2234FC1CBA/Qt/QtPaint/QtPaint -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../QtPaint/paint.h -o moc_paint.cpp
 
 moc_scribblearea.cpp: ../QtPaint/scribblearea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QColor \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QImage \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPoint \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QWidget \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QColor \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QImage \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPoint \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QWidget \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
 		moc_predefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/moc
-	/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/moc $(DEFINES) --include '/media/alki/USB DISK/RutekPoligon/Aplikacje Desktopowe (Pracownia)/Qt/Projekt6/build-QtPaint-Desktop_Qt_6_4_1_GCC_64bit-Debug/moc_predefs.h' -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++ -I'/media/alki/USB DISK/RutekPoligon/Aplikacje Desktopowe (Pracownia)/Qt/Projekt6/QtPaint' -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../QtPaint/scribblearea.h -o moc_scribblearea.cpp
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/moc
+	/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/moc $(DEFINES) --include /media/alki/8034FC2234FC1CBA/Qt/QtPaint/build-QtPaint-Desktop_Qt_6_4_1_GCC_64bit-Debug/moc_predefs.h -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/mkspecs/linux-g++ -I/media/alki/8034FC2234FC1CBA/Qt/QtPaint/QtPaint -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui -I/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../QtPaint/scribblearea.h -o moc_scribblearea.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -885,7 +888,7 @@ compiler_uic_make_all: ui_paint.h
 compiler_uic_clean:
 	-$(DEL_FILE) ui_paint.h
 ui_paint.h: ../QtPaint/paint.ui \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/uic
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/uic
 	/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/libexec/uic ../QtPaint/paint.ui -o ui_paint.h
 
 compiler_yacc_decl_make_all:
@@ -899,1184 +902,1184 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 ####### Compile
 
 main.o: ../QtPaint/main.cpp ../QtPaint/paint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QMainWindow \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmainwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QApplication \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeventloop.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnitypes.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfutureinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmutex.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtsan_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresultstore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadpool.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthread.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdeadlinetimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qelapsedtimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrunnable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qexception.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpromise.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputmethod.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlocale.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication_platform.h
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QMainWindow \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmainwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QApplication \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeventloop.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnitypes.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfutureinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmutex.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtsan_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresultstore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadpool.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthread.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdeadlinetimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qelapsedtimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrunnable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qexception.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpromise.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlocale.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../QtPaint/main.cpp
 
-paint.o: ../QtPaint/paint.cpp /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QtWidgets \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QtWidgetsDepends \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QtCore \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QtCoreDepends \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20algorithm.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20functional.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20iterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q23functional.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstracteventdispatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeventloop.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractitemmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanimationgroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qapplicationstatic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMutex \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmutex.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtsan_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnitypes.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfutureinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresultstore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadpool.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthread.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdeadlinetimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qelapsedtimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrunnable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qexception.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpromise.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qassociativeiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasictimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbitarray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbuffer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraymatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcalendar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlocale.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborarray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborvalue.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatetime.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborcommon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qregularexpression.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/quuid.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcbormap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstreamreader.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfloat16.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstreamwriter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcollator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcommandlineoption.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcommandlineparser.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcryptographichash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdir.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfile.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfiledevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfileinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdiriterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeasingcurve.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qendian.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfactoryinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfileselector.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QStringList \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfilesystemwatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuturesynchronizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuturewatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qidentityproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qitemselectionmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnienvironment.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QScopedPointer \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjniobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonarray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonvalue.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsondocument.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlibrary.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlibraryinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversionnumber.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlockfile.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qloggingcategory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmessageauthenticationcode.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetaobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimedata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimedatabase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimetype.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectcleanuphandler.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qoperatingsystemversion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qparallelanimationgroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpauseanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpluginloader.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocess.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qproperty.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpropertyprivate.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpropertyanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qqueue.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrandom.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qreadwritelock.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresource.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsavefile.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedvaluerollback.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsemaphore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsequentialanimationgroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsequentialiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsettings.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedmemory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsignalmapper.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsimd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsocketnotifier.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsortfilterproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstack.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstandardpaths.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstorageinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlistmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemsemaphore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtemporarydir.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtemporaryfile.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextboundaryfinder.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadstorage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimeline.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimezone.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtranslator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtransposeproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurlquery.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarianthash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QHash \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QVariant \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QString \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMap \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvector.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qwaitcondition.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QDeadlineTimer \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qwineventnotifier.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qxmlstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qxpfunctional.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreversion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QtGui \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QtGuiDepends \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qabstractfileiconprovider.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qglyphrun.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrawfont.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontdatabase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextcursor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocument.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextoption.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessible.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessible_base.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessiblebridge.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessibleobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessibleplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qactiongroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbackingstore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QEvent \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMargins \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsurface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsurfaceformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qclipboard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolorspace.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolortransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qdesktopservices.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qdrag.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfilesystemmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericmatrix.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericpluginfactory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputmethod.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qiconengine.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qiconengineplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimageiohandler.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimagereader.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimagewriter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qmatrix4x4.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector3d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector4d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qquaternion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qmovie.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qoffscreensurface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qoffscreensurface_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopengl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qt_windows.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopengles2ext.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglext.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglcontext.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QSurfaceFormat \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglcontext_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglextrafunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglfunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagedpaintdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagelayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagesize.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpageranges.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevicewindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QWindow \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QPaintDevice \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintengine.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpainter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpainterpath.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpdfwriter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpicture.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmapcache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrasterwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QPaintDeviceWindow \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgbafloat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsessionmanager.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qshortcut.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstandarditemmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstatictext.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstylehints.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsyntaxhighlighter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocumentfragment.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocumentwriter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtexttable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qundogroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qundostack.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvalidator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiversion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleoption.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qslider.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractslider.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyle.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qrubberband.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qframe.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractitemview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qaccessiblewidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QAction \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qactiongroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QActionGroup \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qboxlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgridlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qbuttongroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcalendarwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcheckbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolordialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolormap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolumnview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcombobox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcommandlinkbutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qpushbutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcommonstyle.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcompleter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdatawidgetmapper.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdatetimeedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdial.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdockwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdrawutil.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qerrormessage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfiledialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfileiconprovider.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfilesystemmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QFileSystemModel \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfocusframe.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfontcombobox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfontdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qformlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QLayout \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgesture.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgesturerecognizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsanchorlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslayoutitem.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicseffect.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsgridlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsitemanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslinearlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsproxywidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicswidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicssceneevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicstransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QVector3D \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QMatrix4x4 \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollarea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgroupbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qheaderview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qinputdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlineedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qitemdelegate.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qitemeditorfactory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qkeysequenceedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlabel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlcdnumber.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlistview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlistwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmainwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmdiarea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmdisubwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmenu.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmenubar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmessagebox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtextedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qprogressbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qprogressdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qproxystyle.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QCommonStyle \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qradiobutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscroller.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPointF \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QScrollerProperties \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollerproperties.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMetaType \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qshortcut.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QShortcut \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizegrip.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qspinbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsplashscreen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsplitter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstackedlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstackedwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstatusbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleditemdelegate.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstylefactory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstylepainter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsystemtrayicon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtableview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtablewidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtextbrowser.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtooltip.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreeview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreewidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qundoview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwhatsthis.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidgetaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwizard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsversion.h \
+paint.o: ../QtPaint/paint.cpp ../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QtWidgets \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QtWidgetsDepends \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QtCore \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QtCoreDepends \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20algorithm.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20functional.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20iterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q23functional.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstracteventdispatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeventloop.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanimationgroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qapplicationstatic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMutex \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmutex.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtsan_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnitypes.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfutureinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresultstore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadpool.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthread.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdeadlinetimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qelapsedtimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrunnable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qexception.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpromise.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qassociativeiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbitarray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbuffer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraymatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcalendar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlocale.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborarray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborvalue.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatetime.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborcommon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qregularexpression.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/quuid.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcbormap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstreamreader.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfloat16.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstreamwriter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcollator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcommandlineoption.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcommandlineparser.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcryptographichash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdir.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfile.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfileinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdiriterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeasingcurve.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qendian.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfactoryinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfileselector.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QStringList \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfilesystemwatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuturesynchronizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuturewatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qidentityproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnienvironment.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QScopedPointer \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjniobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonarray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonvalue.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsondocument.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlibrary.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlibraryinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversionnumber.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlockfile.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qloggingcategory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmessageauthenticationcode.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetaobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimedata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimedatabase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimetype.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectcleanuphandler.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qoperatingsystemversion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qparallelanimationgroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpauseanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpluginloader.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocess.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qproperty.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpropertyprivate.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpropertyanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qqueue.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrandom.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qreadwritelock.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresource.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsavefile.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedvaluerollback.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsemaphore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsequentialanimationgroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsequentialiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsettings.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedmemory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsignalmapper.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsimd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsocketnotifier.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsortfilterproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstack.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstandardpaths.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstorageinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlistmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemsemaphore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtemporarydir.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtemporaryfile.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextboundaryfinder.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadstorage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimeline.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimezone.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtranslator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtransposeproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurlquery.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarianthash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QHash \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QVariant \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QString \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMap \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvector.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qwaitcondition.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QDeadlineTimer \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qwineventnotifier.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qxmlstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qxpfunctional.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreversion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QtGui \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QtGuiDepends \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qabstractfileiconprovider.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qglyphrun.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrawfont.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontdatabase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextcursor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextoption.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessible.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessible_base.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessiblebridge.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessibleobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessibleplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qactiongroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbackingstore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QEvent \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMargins \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsurface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsurfaceformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qclipboard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolorspace.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolortransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qdesktopservices.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qdrag.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfilesystemmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericmatrix.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericpluginfactory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qiconengine.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qiconengineplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimageiohandler.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimagereader.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimagewriter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qmatrix4x4.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector3d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector4d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qquaternion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qmovie.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qoffscreensurface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qoffscreensurface_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopengl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qt_windows.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopengles2ext.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglext.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglcontext.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QSurfaceFormat \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglcontext_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglextrafunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglfunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagedpaintdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagelayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagesize.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpageranges.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevicewindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QWindow \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QPaintDevice \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintengine.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpainter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpainterpath.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpdfwriter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpicture.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmapcache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrasterwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QPaintDeviceWindow \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgbafloat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsessionmanager.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qshortcut.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstandarditemmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstatictext.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstylehints.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsyntaxhighlighter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocumentfragment.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocumentwriter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtexttable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qundogroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qundostack.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvalidator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiversion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qslider.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyle.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qrubberband.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qframe.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qaccessiblewidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QAction \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QActionGroup \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgridlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcalendarwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolordialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolormap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolumnview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcombobox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcommandlinkbutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcommonstyle.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcompleter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdatawidgetmapper.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdatetimeedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdial.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdockwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdrawutil.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qerrormessage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfiledialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfileiconprovider.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfilesystemmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QFileSystemModel \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfocusframe.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfontcombobox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfontdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qformlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QLayout \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgesture.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgesturerecognizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsanchorlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslayoutitem.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicseffect.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsgridlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsitemanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslinearlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsproxywidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicswidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicssceneevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicstransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QVector3D \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QMatrix4x4 \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollarea.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgroupbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qheaderview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qinputdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlineedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qitemdelegate.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qitemeditorfactory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qkeysequenceedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlcdnumber.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlistview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlistwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmainwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmdiarea.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmdisubwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmenu.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmenubar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmessagebox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qplaintextedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtextedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qprogressbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qprogressdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qproxystyle.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QCommonStyle \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qradiobutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscroller.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPointF \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QScrollerProperties \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollerproperties.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMetaType \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qshortcut.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QShortcut \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizegrip.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qspinbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsplashscreen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsplitter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstackedlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstackedwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleditemdelegate.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstylefactory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstylepainter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsystemtrayicon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtableview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtablewidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtooltip.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreeview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreewidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qundoview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwhatsthis.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidgetaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwizard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsversion.h \
 		../QtPaint/paint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QMainWindow \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QMainWindow \
 		../QtPaint/scribblearea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QColor \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QImage \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPoint \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QWidget
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QColor \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QImage \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPoint \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o paint.o ../QtPaint/paint.cpp
 
-scribblearea.o: ../QtPaint/scribblearea.cpp /media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QtWidgets \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QtWidgetsDepends \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QtCore \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QtCoreDepends \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20algorithm.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20functional.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20iterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q23functional.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstracteventdispatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeventloop.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractitemmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanimationgroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qapplicationstatic.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMutex \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmutex.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtsan_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnitypes.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfutureinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresultstore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture_impl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadpool.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthread.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdeadlinetimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qelapsedtimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrunnable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qexception.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpromise.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qassociativeiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasictimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbitarray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbuffer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraymatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcalendar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlocale.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborarray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborvalue.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatetime.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborcommon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qregularexpression.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/quuid.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcbormap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstreamreader.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfloat16.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstreamwriter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcollator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcommandlineoption.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcommandlineparser.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcryptographichash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdir.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfile.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfiledevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfileinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdiriterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeasingcurve.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qendian.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfactoryinterface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfileselector.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QStringList \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfilesystemwatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuturesynchronizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuturewatcher.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qidentityproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qitemselectionmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnienvironment.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QScopedPointer \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjniobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonarray.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonvalue.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsondocument.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlibrary.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlibraryinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversionnumber.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlockfile.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qloggingcategory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmessageauthenticationcode.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetaobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimedata.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimedatabase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimetype.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectcleanuphandler.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qoperatingsystemversion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qparallelanimationgroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpauseanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpluginloader.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocess.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qproperty.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpropertyprivate.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpropertyanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qqueue.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrandom.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qreadwritelock.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresource.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsavefile.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedvaluerollback.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsemaphore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsequentialanimationgroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsequentialiterable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsettings.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedmemory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsignalmapper.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsimd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsocketnotifier.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsortfilterproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstack.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstandardpaths.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstorageinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlistmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemsemaphore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtemporarydir.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtemporaryfile.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextboundaryfinder.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadstorage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimeline.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimezone.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtranslator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtransposeproxymodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurlquery.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarianthash.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QHash \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QVariant \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QString \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMap \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvector.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qwaitcondition.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QDeadlineTimer \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qwineventnotifier.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qxmlstream.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qxpfunctional.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreversion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QtGui \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QtGuiDepends \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qabstractfileiconprovider.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qglyphrun.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrawfont.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontdatabase.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextcursor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocument.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextoption.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessible.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessible_base.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessiblebridge.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessibleobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessibleplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qactiongroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbackingstore.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QEvent \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMargins \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsurface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsurfaceformat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qclipboard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolorspace.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolortransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qdesktopservices.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qdrag.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfilesystemmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericmatrix.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericpluginfactory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputmethod.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qiconengine.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qiconengineplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimageiohandler.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimagereader.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimagewriter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qmatrix4x4.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector3d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector4d.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qquaternion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qmovie.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qoffscreensurface.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qoffscreensurface_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopengl.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qt_windows.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopengles2ext.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglext.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglcontext.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QSurfaceFormat \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglcontext_platform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglextrafunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglfunctions.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagedpaintdevice.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagelayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagesize.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpageranges.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevicewindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QWindow \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QPaintDevice \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintengine.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpainter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpainterpath.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpdfwriter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpicture.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmapcache.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrasterwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QPaintDeviceWindow \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgbafloat.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsessionmanager.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qshortcut.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstandarditemmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstatictext.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstylehints.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsyntaxhighlighter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextobject.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocumentfragment.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocumentwriter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextlist.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtexttable.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qundogroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qundostack.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvalidator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiversion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleoption.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qslider.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractslider.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyle.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qrubberband.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qframe.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractitemview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qaccessiblewidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QAction \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qactiongroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QActionGroup \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qapplication.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qboxlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgridlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qbuttongroup.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcalendarwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcheckbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolordialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolormap.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolumnview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcombobox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcommandlinkbutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qpushbutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcommonstyle.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcompleter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdatawidgetmapper.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdatetimeedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdial.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdockwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdrawutil.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qerrormessage.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfiledialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfileiconprovider.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfilesystemmodel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QFileSystemModel \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfocusframe.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfontcombobox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfontdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qformlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QLayout \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgesture.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgesturerecognizer.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsanchorlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslayoutitem.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicseffect.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsgridlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsitemanimation.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslinearlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsproxywidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicswidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicssceneevent.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicstransform.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QVector3D \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QMatrix4x4 \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollarea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgroupbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qheaderview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qinputdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlineedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qitemdelegate.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qitemeditorfactory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qkeysequenceedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlabel.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlcdnumber.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlistview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlistwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmainwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmdiarea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmdisubwindow.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmenu.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmenubar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmessagebox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtextedit.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qprogressbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qprogressdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qproxystyle.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QCommonStyle \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qradiobutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscroller.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPointF \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QScrollerProperties \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollerproperties.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMetaType \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qshortcut.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QShortcut \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizegrip.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qspinbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsplashscreen.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsplitter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstackedlayout.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstackedwidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstatusbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleditemdelegate.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstylefactory.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstylepainter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleplugin.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsystemtrayicon.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtableview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtablewidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtextbrowser.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbar.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbox.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbutton.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtooltip.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreeview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreewidget.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qundoview.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwhatsthis.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidgetaction.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwizard.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsversion.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qtprintsupportglobal.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qtprintsupport-config.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qtprintsupportexports.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/QPrinter \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qprinter.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/QPrintDialog \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qprintdialog.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qabstractprintdialog.h \
+scribblearea.o: ../QtPaint/scribblearea.cpp ../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QtWidgets \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QtWidgetsDepends \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QtCore \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QtCoreDepends \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconfig.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtconfigmacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlogging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qflags.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnumeric.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qforeach.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20algorithm.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20functional.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q20iterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/q23functional.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnamespace.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtmetamacros.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstring.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qchar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrefcount.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpair.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydatapointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qarraydataops.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearrayview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringfwd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanystringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qutf8stringview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringtokenizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetatype.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcompare.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopeguard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatastream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevicebase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetacontainer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontainerinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtaggedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmath.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbindingstorage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstracteventdispatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeventloop.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qhash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariant.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdebug.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter_base.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qshareddata_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qset.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qabstractproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qanimationgroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qapplicationstatic.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMutex \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmutex.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtsan_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qnativeinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnitypes.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfutureinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresultstore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuture_impl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadpool.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthread.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdeadlinetimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qelapsedtimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrunnable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qexception.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpointer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpromise.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qassociativeiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbitarray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbuffer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qiodevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qbytearraymatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcalendar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlocale.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborarray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborvalue.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdatetime.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborcommon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qregularexpression.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/quuid.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcbormap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstreamreader.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfloat16.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcborstreamwriter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcollator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcommandlineoption.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcommandlineparser.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qcryptographichash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdir.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfile.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfileinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qdiriterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qeasingcurve.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qendian.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfactoryinterface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfileselector.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QObject \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QStringList \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfilesystemwatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuturesynchronizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qfuturewatcher.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qidentityproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjnienvironment.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QScopedPointer \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjniobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonarray.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonvalue.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsondocument.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qjsonobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlibrary.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlibraryinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qversionnumber.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qline.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qlockfile.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qloggingcategory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmargins.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmessageauthenticationcode.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmetaobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimedata.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimedatabase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qmimetype.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qobjectcleanuphandler.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qoperatingsystemversion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qparallelanimationgroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpauseanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpluginloader.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qprocess.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qproperty.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpropertyprivate.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qpropertyanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qqueue.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrandom.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qreadwritelock.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qrect.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsize.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qresource.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsavefile.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qscopedvaluerollback.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsemaphore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsequentialanimationgroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsequentialiterable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsettings.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsharedmemory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsignalmapper.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsimd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsocketnotifier.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsortfilterproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstack.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstandardpaths.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstorageinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringconverter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qstringlistmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qsystemsemaphore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtemporarydir.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtemporaryfile.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtextboundaryfinder.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qthreadstorage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimeline.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtimezone.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtranslator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtransposeproxymodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qurlquery.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvarianthash.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QHash \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QVariant \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QString \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QList \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvariantmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMap \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qvector.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qwaitcondition.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QDeadlineTimer \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qwineventnotifier.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qxmlstream.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qxpfunctional.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qtcoreversion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QtGui \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QtGuiDepends \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtgui-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qabstractfileiconprovider.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qicon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgb.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgba64.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixelformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpolygon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qregion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qeventpoint.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector2d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvectornd.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpointingdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qscreen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QRect \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSize \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QSizeF \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QTransform \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qkeysequence.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qglyphrun.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrawfont.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfont.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontdatabase.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextcursor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbrush.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextoption.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpalette.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessible.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessible_base.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessiblebridge.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessibleobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaccessibleplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qactiongroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbackingstore.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QEvent \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMargins \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsurface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsurfaceformat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcursor.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qbitmap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qclipboard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolorspace.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qcolortransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qdesktopservices.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qdrag.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfilesystemmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontinfo.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qfontmetrics.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericmatrix.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qgenericpluginfactory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qguiapplication_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qiconengine.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qiconengineplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimageiohandler.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimagereader.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qimagewriter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qmatrix4x4.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector3d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvector4d.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qquaternion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qmovie.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qoffscreensurface.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qoffscreensurface_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopengl.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/qt_windows.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopengles2ext.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglext.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglcontext.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QSurfaceFormat \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglcontext_platform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglextrafunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qopenglfunctions.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagedpaintdevice.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagelayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpagesize.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpageranges.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintdevicewindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QWindow \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QPaintDevice \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpaintengine.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpainter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpainterpath.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpdfwriter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpicture.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qpixmapcache.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrasterwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QPaintDeviceWindow \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qrgbafloat.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsessionmanager.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qshortcut.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstandarditemmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstatictext.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qstylehints.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qsyntaxhighlighter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextobject.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocumentfragment.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextdocumentwriter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtextlist.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtexttable.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qundogroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qundostack.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qvalidator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/qtguiversion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qslider.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyle.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtabwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qrubberband.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qframe.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qaccessiblewidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QAction \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QActionGroup \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgridlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcalendarwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolordialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolormap.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcolumnview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcombobox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcommandlinkbutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcommonstyle.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qcompleter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdatawidgetmapper.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdatetimeedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdial.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdockwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qdrawutil.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qerrormessage.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfiledialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfileiconprovider.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfilesystemmodel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QFileSystemModel \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfocusframe.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfontcombobox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qfontdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qformlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QLayout \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgesture.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgesturerecognizer.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsanchorlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslayoutitem.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicseffect.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsgridlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsitemanimation.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicslinearlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsproxywidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicswidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicssceneevent.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicstransform.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QVector3D \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QMatrix4x4 \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgraphicsview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollarea.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qgroupbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qheaderview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qinputdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlineedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qitemdelegate.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qitemeditorfactory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qkeysequenceedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlcdnumber.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlistview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qlistwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmainwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmdiarea.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmdisubwindow.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmenu.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmenubar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qmessagebox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qplaintextedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtextedit.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qprogressbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qprogressdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qproxystyle.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QCommonStyle \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qradiobutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscroller.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPointF \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QScrollerProperties \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qscrollerproperties.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QMetaType \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qshortcut.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QShortcut \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsizegrip.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qspinbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsplashscreen.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsplitter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstackedlayout.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstackedwidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleditemdelegate.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstylefactory.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstylepainter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qstyleplugin.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qsystemtrayicon.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtableview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtablewidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbar.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbox.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtoolbutton.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtooltip.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreeview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreewidget.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qundoview.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwhatsthis.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwidgetaction.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qwizard.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/qtwidgetsversion.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qtprintsupportglobal.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qtprintsupport-config.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qtprintsupportexports.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/QPrinter \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qprinter.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/QPrintDialog \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qprintdialog.h \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtPrintSupport/qabstractprintdialog.h \
 		../QtPaint/scribblearea.h \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QColor \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QImage \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPoint \
-		/media/alki/FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QWidget
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QColor \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtGui/QImage \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtCore/QPoint \
+		../../../../FCC4DE20C4DDDD48/Zainstalowane/Ubuntu/Qt/6.4.1/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o scribblearea.o ../QtPaint/scribblearea.cpp
 
 moc_paint.o: moc_paint.cpp 

@@ -16,11 +16,6 @@ class Paint : public QMainWindow
 
 public:
     Paint();
-//    Paint(QWidget *parent = nullptr);
-//    ~Paint();
-
-//private:
-//    Ui::Paint *ui;
 
 protected:
     void closeEvent(QCloseEvent *event) override;
